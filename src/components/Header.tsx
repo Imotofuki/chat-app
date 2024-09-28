@@ -1,25 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../css/header.css';
 
 const Header = () => {
     return (
-        <div>
+        <div className='header-contents'>
             <header>
-                <div className="logo">Chat-App</div>
+                <div className="header-logo">Chat-App</div>
 
-                <nav>
+                <nav className='header-nav'>
                     <ul>
                         <li>
-                            <Link to="/">チャットへ</Link>
-                        </li>
-                        <li>
-                            <Link to="/friend">フレンド</Link>
-                        </li>
-                        <li>
-                            <Link to="/add_friend">フレンド追加</Link>
-                        </li>
-                        <li>
-                            <Link to="/login">ログアウト</Link>
+                            <Link to="/login" className='header-link'>ログアウト</Link>
                         </li>
                     </ul>
                 </nav>
